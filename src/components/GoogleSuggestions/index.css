@@ -1,0 +1,77 @@
+/* Write your CSS here */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.bg-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-logo-and-search-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-logo {
+  width: auto;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.google-search-input-and-suggestions-container {
+  width: 300px;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.google-search-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  height: 25px;
+  width: 25px;
+}
+
+input {
+  width: 250px;
+  border: none;
+  outline: none;
+  padding: 8px;
+}
+
+input::placeholder {
+  font-weight: 500;
+  font-family: Roboto;
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  .google-logo {
+    height: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  .google-search-input-and-suggestions-container {
+    width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  input {
+    width: 450px;
+  }
+}
